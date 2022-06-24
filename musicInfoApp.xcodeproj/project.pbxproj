@@ -16,6 +16,7 @@
 		E213505428659E38005714DE /* SongModelDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E213505328659E38005714DE /* SongModelDate.swift */; };
 		E213505728659E7F005714DE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E213505628659E7F005714DE /* MainTabBarController.swift */; };
 		E213505928659F85005714DE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E213505828659F85005714DE /* SearchViewController.swift */; };
+		E213505D2865C616005714DE /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E213505C2865C616005714DE /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E213505328659E38005714DE /* SongModelDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModelDate.swift; sourceTree = "<group>"; };
 		E213505628659E7F005714DE /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		E213505828659F85005714DE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E213505C2865C616005714DE /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		E213505B2865BA66005714DE /* SettingViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E213505C2865C616005714DE /* SettingViewController.swift */,
 			);
 			path = SettingViewController;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				E213503628644B31005714DE /* AppDelegate.swift in Sources */,
 				E213505928659F85005714DE /* SearchViewController.swift in Sources */,
 				E213505028659E18005714DE /* API.swift in Sources */,
+				E213505D2865C616005714DE /* SettingViewController.swift in Sources */,
 				E213505728659E7F005714DE /* MainTabBarController.swift in Sources */,
 				E213505428659E38005714DE /* SongModelDate.swift in Sources */,
 				E213503828644B31005714DE /* SceneDelegate.swift in Sources */,
