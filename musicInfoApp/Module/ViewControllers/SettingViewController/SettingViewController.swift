@@ -7,9 +7,10 @@
 
 import UIKit
 
-//MARK: - TO-DO
+//MARK: - TO-DO dark theme 
 class SettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .lightGray
     }
 }
