@@ -12,11 +12,12 @@ final class API {
     
     //MARK: Property
     private let host = "https://itunes.apple.com/search?term="
-    //let song = Song()
     
     //MARK: Method
     func getUrlWithSearchStr(str: String) -> String {
         let rightStr = str.replacingOccurrences(of: " ", with: "+").lowercased()
+        print(host + "\(rightStr)" + "&entity=musicTrack")
         return host + "\(rightStr)" + "&entity=musicTrack"
+        
     }
 }
