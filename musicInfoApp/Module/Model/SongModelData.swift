@@ -1,5 +1,5 @@
 //
-//  SongModelDate.swift
+//  SongModelData.swift
 //  musicInfoApp
 //
 //  Created by Alexander Pavlovets on 24.06.2022.
@@ -18,7 +18,7 @@ struct Song: Codable {
     var artistName: String?
     var collectionName: String?
     var trackName: String?
-    var artworkUrl160: URL?
+    var artworkUrl100: URL?
     var previewUrl: String?
     var primaryGenreName: String?
     var trackTimeMillis: Int?
@@ -29,7 +29,7 @@ struct Song: Codable {
         case artistName = "artistName"
         case collectionName = "collectionName"
         case trackName = "trackName"
-        case artworkUrl160 = "artworkUrl160"
+        case artworkUrl100 = "artworkUrl100"
         case previewUrl = "previewUrl"
         case primaryGenreName = "primaryGenreName"
         case trackTimeMillis = "trackTimeMillis"
@@ -45,10 +45,9 @@ struct Song: Codable {
         self.primaryGenreName = try container.decode(String.self, forKey: .primaryGenreName)
         self.trackTimeMillis = try container.decode(Int.self, forKey: .trackTimeMillis)
         self.trackId = try container.decode(Int.self, forKey: .trackId)
-        
-        if let imageUrl = try? container.decode(String.self, forKey: .artworkUrl160) {
-            let largeImage = imageUrl.replacingOccurrences(of: "160x160", with: "300x300")
-            self.artworkUrl160 = URL(string: largeImage)
+        if let imageString = try? container.decode(String.self, forKey: .artworkUrl100 ) {
+            let largeImage = imageString.replacingOccurrences(of: "100x100", with: "300x300")
+            self.artworkUrl100 = URL(string: largeImage)
         }
     }
 }
