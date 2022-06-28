@@ -21,6 +21,11 @@ final class SongDetailedViewController: UIViewController {
         self.bind()
     }
     
+    //MARK: - life cycle
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.post(name: Self.cancelButtonDidTapNotification, object: nil)
+    }
+    
     //MARK: - Notification 
     static var cancelButtonDidTapNotification = Notification.Name("cancelButtonDidTapNotification")
     
