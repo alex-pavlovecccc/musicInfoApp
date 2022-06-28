@@ -30,6 +30,8 @@
 		E242580C286A56E000F4F6FC /* SongDetailedViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242580B286A56E000F4F6FC /* SongDetailedViewControllerProtocol.swift */; };
 		E242580E286A56E900F4F6FC /* SongDetailedViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242580D286A56E900F4F6FC /* SongDetailedViewControllerDelegate.swift */; };
 		E2425810286A56F200F4F6FC /* SongDetailedViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242580F286A56F200F4F6FC /* SongDetailedViewControllerViewModel.swift */; };
+		E2425825286AE7D700F4F6FC /* ImageAndButtonsDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2425823286AE7D700F4F6FC /* ImageAndButtonsDetailCell.swift */; };
+		E2425826286AE7D700F4F6FC /* ImageAndButtonsDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2425824286AE7D700F4F6FC /* ImageAndButtonsDetailCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		E242580B286A56E000F4F6FC /* SongDetailedViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailedViewControllerProtocol.swift; sourceTree = "<group>"; };
 		E242580D286A56E900F4F6FC /* SongDetailedViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailedViewControllerDelegate.swift; sourceTree = "<group>"; };
 		E242580F286A56F200F4F6FC /* SongDetailedViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailedViewControllerViewModel.swift; sourceTree = "<group>"; };
+		E2425823286AE7D700F4F6FC /* ImageAndButtonsDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAndButtonsDetailCell.swift; sourceTree = "<group>"; };
+		E2425824286AE7D700F4F6FC /* ImageAndButtonsDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageAndButtonsDetailCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 		E213505E2865D587005714DE /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				E2425827286AE7DF00F4F6FC /* ImageAndButtonsDetailCell */,
 				E2425804286A373B00F4F6FC /* SongDetailedViewControllerCell */,
 				E21350742869CA36005714DE /* SearchTableViewCell */,
 			);
@@ -228,6 +233,15 @@
 				E2425808286A4EDF00F4F6FC /* SongDetailedViewControllerCell.xib */,
 			);
 			path = SongDetailedViewControllerCell;
+			sourceTree = "<group>";
+		};
+		E2425827286AE7DF00F4F6FC /* ImageAndButtonsDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				E2425823286AE7D700F4F6FC /* ImageAndButtonsDetailCell.swift */,
+				E2425824286AE7D700F4F6FC /* ImageAndButtonsDetailCell.xib */,
+			);
+			path = ImageAndButtonsDetailCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2425826286AE7D700F4F6FC /* ImageAndButtonsDetailCell.xib in Resources */,
 				E213504228644B33005714DE /* LaunchScreen.storyboard in Resources */,
 				E242580A286A4EDF00F4F6FC /* SongDetailedViewControllerCell.xib in Resources */,
 				E213503F28644B33005714DE /* Assets.xcassets in Resources */,
@@ -310,6 +325,7 @@
 				E21350672865F1A6005714DE /* SearchVCViewModelDelegate.swift in Sources */,
 				E213506D28687021005714DE /* ImageDownloadService.swift in Sources */,
 				E213507B2869F761005714DE /* UITableView + Ex.swift in Sources */,
+				E2425825286AE7D700F4F6FC /* ImageAndButtonsDetailCell.swift in Sources */,
 				E21350692865F1B8005714DE /* SearchVCViewModelProtocol.swift in Sources */,
 				E2425803286A36D000F4F6FC /* SongDetailedViewController.swift in Sources */,
 				E213505928659F85005714DE /* SearchViewController.swift in Sources */,

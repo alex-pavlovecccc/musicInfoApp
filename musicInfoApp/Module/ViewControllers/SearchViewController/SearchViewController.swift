@@ -9,7 +9,6 @@ import UIKit
 
 final class SearchViewController: UIViewController {
     
-    
     //MARK: - ViewModel
     private var viewModel: SearchVCViewModelProtocol = SearchVCViewModel()
     
@@ -52,7 +51,7 @@ final class SearchViewController: UIViewController {
     private func setupElement() {
         self.title = "Songs"
         self.view.addSubview(self.tableView)
-//        searchBar(searchController.searchBar, textDidChange: "dua Lipa")
+        //        searchBar(searchController.searchBar, textDidChange: "dua Lipa")
     }
     
     override func viewDidLayoutSubviews() {
@@ -94,7 +93,6 @@ extension SearchViewController: SearchVCViewModelDelegate {
         self.tableView.reloadData()
     }
 }
-
 
 //MARK: - UISearchBarDelegate
 extension SearchViewController: UISearchBarDelegate {
