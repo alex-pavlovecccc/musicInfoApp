@@ -21,6 +21,9 @@ final class SongDetailedViewController: UIViewController {
         self.bind()
     }
     
+    //MARK: - Notification 
+    static var cancelButtonDidTapNotification = Notification.Name("cancelButtonDidTapNotification")
+    
     //MARK: - ViewModel
     var viewModel: SongDetailedViewControllerProtocol = SongDetailedViewControllerViewModel()
     
@@ -83,6 +86,7 @@ final class SongDetailedViewController: UIViewController {
     
     //MARK: Action
     @objc func closeButtonDidTap(){
+        NotificationCenter.default.post(name: Self.cancelButtonDidTapNotification, object: nil)
         dismiss(animated: true, completion: nil)
     }
 }
