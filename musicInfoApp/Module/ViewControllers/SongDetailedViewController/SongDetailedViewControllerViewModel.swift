@@ -23,8 +23,8 @@ final class SongDetailedViewControllerViewModel: NSObject, SongDetailedViewContr
         }
     }
     //MARK: - Method
-    func getSong(indexPath: IndexPath) -> Song {
-        return songs[indexPath.row]
+    func getSong() -> Song? {
+        return songs.first
     }
     
     func setSong(song: Song) {

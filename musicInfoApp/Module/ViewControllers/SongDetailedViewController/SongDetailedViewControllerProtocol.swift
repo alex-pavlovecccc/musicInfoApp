@@ -8,7 +8,7 @@
 import UIKit
 
 protocol SongDetailedViewControllerProtocol {
-    func getSong(indexPath: IndexPath) -> Song
+    func getSong() -> Song?
     func setSong(song: Song)
     var delegate: SongDetailedViewControllerDelegate? { set get }
     var countSong: Int { get }
