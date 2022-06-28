@@ -38,7 +38,10 @@ class ImageAndButtonsDetailCell: UITableViewCell {
         super.awakeFromNib()
         self.setButtonStyle()
         self.setImageStyle()
-        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(closeButtonDidTap),
+                                               name: SongDetailedViewController.cancelButtonDidTapNotification,
+                                               object: nil)
     }
     
     //MARK: - Method
@@ -77,6 +80,11 @@ class ImageAndButtonsDetailCell: UITableViewCell {
             self.stopTrackAnimation()
         }
         playButton.isSelected = !playButton.isSelected
+    }
+    
+   @objc private func closeButtonDidTap() {
+        self.player.pause()
+        self.audioURL = nil
     }
     
     //MARK: Animation method
